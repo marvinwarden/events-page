@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    color: goldenrod;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    background-image: url("images/bgpattern.png");
+}
+
+/* navigation section */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    height: 120px;
+    width: 100%;
+    background-color: aliceblue;
+    box-shadow: 5px 5px 5px rgb(197, 196, 196);
+    z-index: 1;
+}
+
+.logo {
+    height: 120px;
+    float: left;
+}
+
+.link-btn {
+    position: relative;
+    float: right;
+    margin: 35px 30px;
+    visibility: hidden;
+    width: 50px;
+    height: 50px;
+    
+}
+
+.nav-links {
+    float: right;
+    text-decoration: none;
+    color: goldenrod;
+    font-size: 1.5rem;
+    margin: 40px 30px;
+}
+
+
+.nav-links:hover {
+    color: rgb(243, 199, 88);
+}
+
+/* title section */
+
+.heading {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: goldenrod;
+    padding: 50px 200px;
+}
+
+video {
+    width: 100%;
+    margin: 50px auto 0 auto;
+}
+
+.title {
+    position: relative;
+
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+.title-description {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+/* events section */
+
+.events-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px 50px;
+    justify-content: space-evenly;
+}
+
+.event {
+    background-color: aliceblue;
+    padding: 60px 40px;
+    margin: 15px 50px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px rgb(181, 211, 201);
+   
+}
+
+.event-img {
+
+    /* margin-top: 100px; */
+    width: 300px;
+}
+
+/* newsletter form */
+
+.sign-up {
+    position: relative;
+    margin-top: 150px;
+    padding: 50px 0 150px 350px;
+    text-align: center;
+    background-color: rgb(157, 194, 226);
+
+}
+
+h3 {
+    margin: 0 auto 75px auto;
+    width: 600px;
+    color: aliceblue;
+}
+
+.newsletter-img {
+    position: absolute;
+    bottom: 166px;
+    left: 159px;
+    transform: rotate(335deg);
+    width: 350px;
+}
+
+
+input {
+    vertical-align: middle;
+    height: 50px;
+    width: 300px;
+    outline: none;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 3px 2px 3px rgb(77, 78, 80);
+    padding-left: 20px;
+    font-size: 16px;
+    font-family: 'Source Code Pro', monospace;
+    color: rgb(133, 133, 133);
+
+}
+
+::-webkit-input-placeholder {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 16px;
+
+}
+
+button {
+
+    background-color: goldenrod;
+    vertical-align: middle;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 3px 2px 3px rgb(77, 78, 80);
+    height: 53px;
+    width: 200px;
+    color: aliceblue;
+    font-size: 16px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: rgb(17, 109, 189);
+    color: goldenrod;
+}
+
+/* footer section */
+
+footer {
+    padding: 50px 0;
+    background-color: aliceblue;
+    font-size: 1rem;
+}
+
+.footer-links {
+    margin: 0 20px;
+    color: goldenrod;
+    text-decoration: none;
+}
+
+.footer-links:hover {
+    color: rgb(243, 199, 88);
+}
+
+
+
+/* media queries */
+
+@media only screen and (max-width: 1440px) {
+    .newsletter-img {
+        bottom: 90px;
+        left: 80px;
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1229px) {
+    .events-container {
+        display: block;
+    }
+
+    .newsletter-img {
+        vertical-align: middle;
+        width: 300px;
+    }
+
+    input {
+        display: block;
+        margin: 0 auto 25px auto;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .sign-up {
+        padding: 50px 0 50px 0;
+    }
+
+    .newsletter-img {
+        position: relative;
+        bottom: 40px;
+        left: auto;
+        right: auto;
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .navbar {
+        height: 80px;
+
+    }
+
+    .logo {
+        height: 80px;
+        float: left;
+    }
+
+
+    .nav-links {
+
+        font-size: 1rem;
+        margin: 32px 30px;
+
+    }
+
+
+
+
+
+    .heading {
+
+        padding: 50px 0;
+    }
+
+    h3 {
+        width: 50%;
+    }
+
+    .event {
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+    }
+
+    .event-img {
+
+
+        width: 200px;
+    }
+
+
+}
